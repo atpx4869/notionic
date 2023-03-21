@@ -5,7 +5,7 @@ const BLOG = {
   link: 'https://zuolan.me',
   newsletter: 'Notionic Weekly',
   description: 'A static blog build on top of Notion and Next.js',
-  lang: 'en-US', // ['en-US', 'zh-CN', 'zh-HK', 'zh-TW', 'ja-JP', 'es-ES']
+  lang: 'zh-CN', // ['en-US', 'zh-CN', 'zh-HK', 'zh-TW', 'ja-JP', 'es-ES']
   appearance: 'auto', // ['light', 'dark', 'auto'],
   font: 'sans-serif', // ['sans-serif', 'serif']
   lightBackground: '#F6F8FA', // use hex value, don't forget '#' e.g #fffefc
@@ -66,10 +66,10 @@ const BLOG = {
   },
   comment: {
     // support provider: utterances, supacomments
-    provider: '', // leave it empty if you don't need any comment plugin
+    provider: 'supacomments', // leave it empty if you don't need any comment plugin
     supaCommentsConfig: {
-      supabaseUrl: '', // The url of your Supabase instance
-      supabaseAnonKey: '' // The anonymous key of your Supabase instance
+      supabaseUrl: 'https://nfignsauqqocrtinxojb.supabase.co', // The url of your Supabase instance
+      supabaseAnonKey: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im5maWduc2F1cXFvY3J0aW54b2piIiwicm9sZSI6ImFub24iLCJpYXQiOjE2Nzk0MTIyNzAsImV4cCI6MTk5NDk4ODI3MH0.vIBTxGAlNuPC-fcNP5can5w6Nn7Evk_0cKRzYiOb0DM' // The anonymous key of your Supabase instance
     },
     utterancesConfig: {
       repo: ''
